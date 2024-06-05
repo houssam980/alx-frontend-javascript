@@ -7,7 +7,7 @@ export default function updateStudentGradeByCity(array, city, grad) {
             const gradeItems = grad
                 .filter((item) => item.studentId === student.id)
                 .map((n) => n.grade)[0];
-            const grd = gradeItems || 'N/A';
-            return { ...student, grd };
+            const grade = gradeItems || 'N/A';
+            return { ...student, grade };
         });
 }
